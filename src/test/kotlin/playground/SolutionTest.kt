@@ -1,12 +1,15 @@
 package playground
 
-import org.junit.Assert
+import junit.framework.Assert.assertEquals
+import junit.framework.Assert.assertNotSame
 import org.junit.Test
 
 class SolutionTest {
 
     @Test
-    fun testSomething() {
-        Assert.assertEquals(Solution.a, 10)
+    fun testGiveMeDouble() {
+        val solution = Solution()
+        assertEquals(2, solution.giveMeDouble(1))
+        assertNotSame(1, solution.giveMeDouble(1))
     }
 }
