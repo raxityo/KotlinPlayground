@@ -1,7 +1,7 @@
 package playground
 
-import junit.framework.Assert.assertEquals
-import junit.framework.Assert.assertNotSame
+import junit.framework.TestCase.assertEquals
+import junit.framework.TestCase.assertNotSame
 import org.junit.Test
 
 class SolutionTest {
